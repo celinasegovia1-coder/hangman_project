@@ -10,6 +10,7 @@ El desarrollo se realizará de forma progresiva, siguiendo las ocho tareas estab
 
 - Celina Segovia
 - Eduardo Rodriguez
+- Fabriccio Ferreira
 
 ## Tecnologías
 
