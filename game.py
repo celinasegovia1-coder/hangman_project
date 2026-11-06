@@ -20,3 +20,12 @@ class HangmanGame:
         result = " ".join(progress)
         print(result)
         return result
+
+    def process_guess(self, letter):
+        """Procesa una letra ingresada y actualiza el estado del juego."""
+        if letter.lower() in self.word.lower():
+            self.guessed_letters.append(letter.lower())
+            return True
+        else:
+            self.errors += 1
+            return False
