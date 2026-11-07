@@ -34,14 +34,14 @@ def main():
         print(f"Letras intentadas: {', '.join(tried_letters) if tried_letters else 'Ninguna'}")
 
         print("Progreso actual:")
-        current_progress = game.display_progress()
+        game.display_progress()
 
         # Mostrar intentos incorrectos restantes
         intentos_restantes = game.max_errors - game.errors
         print(f"Intentos incorrectos restantes: {intentos_restantes} / {game.max_errors}")
 
-        # Verificar condición de victoria
-        if "_" not in current_progress:
+        # Verificar condición de victoria (Tarea 7: ignora espacios y signos)
+        if game.is_won():
             print(f"\n¡Felicidades! Has ganado. La palabra era: {game.word}")
             break
 
@@ -66,3 +66,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
