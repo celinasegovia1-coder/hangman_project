@@ -29,9 +29,14 @@ class HangmanGame:
         else:
             self.errors += 1
             return False
+
     def is_won(self):
         """Devuelve True si se adivinaron todas las letras de la palabra."""
         for letter in self.word:
             if letter.isalpha() and letter.lower() not in self.guessed_letters:
                 return False
         return True
+
+    def is_lost(self):
+        """Devuelve True si se alcanzó el máximo de errores."""
+        return self.errors >= self.max_errors
