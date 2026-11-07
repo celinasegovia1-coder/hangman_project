@@ -28,7 +28,7 @@ def main():
     print("========================================")
 
     # Bucle principal del juego
-    while game.errors < game.max_errors:
+    while not game.is_lost():
         print("\n----------------------------------------")
         # Mostrar todas las letras intentadas hasta el momento
         print(f"Letras intentadas: {', '.join(tried_letters) if tried_letters else 'Ninguna'}")
@@ -57,7 +57,7 @@ def main():
             print(f"Letra incorrecta. Te quedan {game.max_errors - game.errors} intentos.")
 
         # Verificar condición de derrota
-        if game.errors >= game.max_errors:
+        if game.is_lost():
             print("\n----------------------------------------")
             print(f"¡Game Over! Te has quedado sin intentos. La palabra era: {game.word}")
             print("----------------------------------------")
@@ -66,4 +66,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
