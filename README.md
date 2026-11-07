@@ -4,7 +4,7 @@
 
 Proyecto académico desarrollado en Python que consiste en implementar un juego de Ahorcado mediante consola.
 
-El desarrollo se realizará de forma progresiva, siguiendo las ocho tareas establecidas en la consigna académica.
+El proyecto se desarrolló de forma progresiva, siguiendo las ocho tareas establecidas en la consigna académica.
 
 ## Equipo de desarrollo
 
@@ -29,4 +29,6 @@ El desarrollo se realizará de forma progresiva, siguiendo las ocho tareas estab
 
 ## Estado del desarrollo
 
-Tarea 0 de 8: preparación de la estructura inicial del proyecto.
+Tareas 0 a 7: implementación completada.
+
+Pendiente: auditoría final del proyecto y revisión manual de QA.
