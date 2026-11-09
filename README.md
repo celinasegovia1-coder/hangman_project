@@ -27,8 +27,14 @@ El proyecto se desarrolló de forma progresiva, siguiendo las ocho tareas establ
 - wordlist.txt: listado de palabras posibles.
 - README.md: documentación del proyecto.
 
+## Funcionalidades adicionales
+
+- Permite iniciar una nueva partida al finalizar la anterior.
+- Acepta respuestas afirmativas (s, si, sí) y negativas (n, no).
+- Valida las respuestas y vuelve a preguntar cuando son incorrectas.
+
 ## Estado del desarrollo
 
-Tareas 0 a 7: implementación completada.
+Tareas 0 a 7: implementación completa.
 
-Pendiente: auditoría final del proyecto y revisión manual de QA.
+Tarea 8: mejora opcional: funcionalidad de volver a jugar implementada y probada.
