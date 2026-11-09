@@ -64,5 +64,21 @@ def main():
             break
 
 
+def ask_play_again():
+    """Pregunta si el jugador quiere jugar otra partida."""
+    while True:
+        answer = input("\n¿Quieres jugar de nuevo? (s/n): ").strip().lower()
+        if answer in ("s", "si", "sí"):
+            return True
+        if answer in ("n", "no"):
+            return False
+        print("Respuesta no válida. Escribe s o n.")
+
+
 if __name__ == "__main__":
-    main()
+    while True:
+        main()
+        if not ask_play_again():
+            print("¡Gracias por jugar!")
+            break
+            
